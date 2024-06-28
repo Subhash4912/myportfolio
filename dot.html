@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .mother {
+        width: 100px;
+      }
+      .child {
+        justify-content: space-between;
+        display: flex;
+        gap: 30px;
+        list-style-type: none;
+      }
+      .search {
+        padding-right: 100px;
+      }
+      @media screen and (max-width: 480px) {
+        .child {
+          display: none;
+        }
+      }
+      @media screen and (max-width:524px){
+        .nav-container{
+            background-color: brown;
+        }
+      
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="nav-container">
+        <div class="logo">
+          <img class="mother" src="./images.png" alt="" />
+        </div>
+        <div class="menu">
+          <ul class="child">
+            <li>Home</li>
+            <li>About</li>
+            <li>login</li>
+          </ul>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="search for product " />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

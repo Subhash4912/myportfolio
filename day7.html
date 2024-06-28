@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .nav-container {
+        display: flex;
+      }
+      .logo {
+        width: 20%;
+      }
+      .search {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nav-menus {
+        width: 40%;
+        display: flex;
+    align-items: center;
+      }
+      .menus-parent {
+        display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 40%;
+    gap: 89px;
+      }
+      .menus-child {
+      }
+      .logo-img {
+        width: 113px;
+      }
+      .input-search {
+        height: 20px;
+        width: 61%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="logo">
+        <img class="logo-img" src="./logo.png" alt="logo" />
+      </div>
+
+      <div class="search">
+        <input
+          class="input-search"
+          type="text"
+          placeholder="search product...."
+        />
+      </div>
+
+      <div class="nav-menus">
+        <ul class="menus-parent">
+          <li class="menus-child">Home</li>
+          <li>login</li>
+          <li>category</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
